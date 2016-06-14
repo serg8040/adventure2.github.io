@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>Adventure</title>
+
+ 
+
+     <style type="text/css">
+        
+
+         .styleText 
+         {
+             color: lightgreen;
+             background-color: black;
+             font-size: 16px;
+             
+             
+         }
+         .styleBackground
+         {
+                          background-color: black;
+
+         }
+         
+    </style>
+    <script type="text/javascript" src="http://localhost:8888/jquery-2.2.3.min.js"></script>               
+</head>
+<body class="styleBackground">
+    <!--<p>Место для содержимого</p>
+    <div id="txt">
+        <input id="my" type="text" />
+    </div>    
+    <input id="my"><br /><p></p> -->
+   <textarea class="styleText" id="txt" rows='35' cols="200" ></textarea>
+
+  
+
+   
+   <!-- <input id="my" type="text" value="" class="text" /> -->
+    <script src="./advexter.js"></script>  
+    <script src="./page.js"></script>
+    <script src="./pct.js"></script> 
+    <script src="./fatal.js"></script> 
+    <script src="./mes.js"></script> 
+    <script src="./get.js"></script> 
+    <script src="./rspeak.js"></script> 
+    <script src="./score.js"></script> 
+    <script src="./dark.js"></script> 
+    <script src="./chloc.js"></script> 
+    <script src="./descr.js"></script> 
+    <script src="./events.js"></script> 
+    
+    <script src="./indobj.js"></script> 
+    <script src="./yes.js"></script> 
+    <script src="./mscore.js"></script> 
+    <script src="./act.js"></script> 
+    <script src="./motion.js"></script> 
+    <script src="./specia.js"></script>
+	<script src="./savecm.js"></script>
+    
+    <script src="./advent.js"></script> 
+    
+    
+     
+
+  <!--  <script src="http://localhost:8888/mes.js"></script> --> 
+   <!-- <script type="text/javascript" src="http://localhost:8888/get.js"></script>     -->      
+   
+  
+   
+  <!--  <input type="file" id="your-files" multiple>
+    <script>
+       
+        var control = document.getElementById("your-files");
+        control.addEventListener("change", function(event) {
+            // Когда происходит изменение элементов управления, значит появились новые файлы
+            var i = 0,
+                files = control.files,
+                len = files.length;
+
+            for (; i < len; i++) {
+                console.log("Filename: " + files[i].name);
+                console.log("Type: " + files[i].type);
+                console.log("Size: " + files[i].size + " bytes");
+            }
+
+            var reader = new FileReader();
+            reader.onload = function (event) {
+                var contents = event.target.result;
+                console.log("Содержимое файла: " + contents);
+            };
+
+            reader.onerror = function (event) {
+                console.error("Файл не может быть прочитан! код " + event.target.error.code);
+            };
+
+            reader.readAsArrayBuffer(files[0]);
+
+        }, false);    
+    </script> 
+	
+    <script>
+        console.log("Hello");
+        var fs = require('fs'); 
+
+        // Считывание содержимого файла в память
+        fs.readFile("C:/node/server/public/text.adv", "utf8", function (err, buffer) {
+
+        // Если произошла ошибка, то генерируем исключение,
+        // и работа приложения завершится.
+        //if (err) throw err;
+
+        // logData имеет тип Buffer, переводим в строку
+        //var text = logData
+        // console.log(buffer.length + "\n");
+        // console.log(buffer[10]);
+        //console.log(buffer.toString().length);
+        console.log(buffer);
+        })
+    </script>   -->
+    
+<script>
+  
+   
+/*
+   $.ajax( {
+    url: 'http://localhost:8888/text.adv',
+    dataType : "JSON",                    
+    success: function (data, textStatus) { 
+    //$.each(JSON.parse(data), function(i, val) {    
+   // console.log(data);
+	//console.log(val);    
+    }
+	
+    });
+    
+    var val;
+    var p = 0;
+    function iniget() {
+        $.get("http://localhost:8888/data.adv", ondata)
+            // var arr = data.toArrayBuffer();
+            //alert( data[2] );
+           // console.log(data)
+            //return jqxhr;
+            //document.getElementById("data").value = data;
+            //alert(jqxhr.responseText);
+            //alert(document.getElementById("data").value)
+        
+        function ondata(data)
+        {
+            val = data;
+            console.log(data);
+            return data;
+        }
+       
+        p = 1;
+      //  return val.responseText;
+    }
+    iniget();
+    function get1()
+    {
+        
+        var d = document.getElementById("data").value;
+        return d;
+    }
+    var k = get1();
+    console.log(k);
+    */
+    //alert(val);
+    //alert(val.responseText);
+    //val = document.getElementById("data").value;
+   // alert(p);
+   // console.log(document.getElementById("data").value);
+    //  var k = adr;
+
+    /*
+    var adv_data = "http://localhost:8888/data.adv"
+    //var adv_data2 = "\advent\data.adv"
+
+    //var cb; //ФАЙЛ
+    var bevents; //символы
+    var pevents = 0;
+    var val;
+    var user = "";
+    function iniget(adr) {
+        //alert(adr);
+
+      /*
+        $.ajax({
+            url: adv_data,
+            type: "GET",
+        }).done(function (data) {
+           // console.log(data);
+            //user = data;
+            console.log(user = data);
+            //return user
+        }) 
+          
+        console.log(user);
+        */
+         /*
+        
+        var jqxhr = $.get("http://localhost:8888/data.adv", function (data) {
+            //
+            //  alert(data);
+            //var data;
+           // alert(data);
+            pevents = 1;
+            val = pevents;
+        }).responseText
+        alert(jqxhr);
+        */
+             //alert(pevents);
+             //return pevents;
+            // bevents = data.substr(tevent, eevent - tevent);
+ 
+           /* if (tevent <= adr && adr < eevent) {
+                 pevents = bevents + (adr - tevent); //убрал + bevents
+             } else {
+                 pevents = null;
+                 //return adr;
+             } */
+        // pevents = 1;
+        // return pevents;
+        // })
+        // alert(pevents);
+        //   pevents = 2;
+        //alert(pevents);
+        // return pevents;
+        // alert(val);
+        //  alert(val);
+        //return val;
+
+        // bevents = malloc( eevent-tevent+2 );
+        //fseek( cb, tevent, 0 );
+        //fread( bevents, eevent-tevent, 1, cb );
+        /* bevents = data.substr(tevent, eevent - tevent);
+     
+         if( tevent <= adr && adr < eevent ) {
+             pevents = bevents + (adr-tevent); //убрал + bevents
+         } else {
+             pevents = null;
+             //return adr;
+         }
+         return data;
+         
+        //alert(pevents);       
+    }*/
+   // }
+    //iniget(2222);
+   // console.log(user);
+   // alert(val);
+   // alert(pevents);
+/* 
+    function get() {
+
+        var c; //символ
+        var res
+        if (pevents == null) {
+            //  $.get("http://localhost:8888/data.adv", function(data)
+            // {
+            c = data[k];
+            k++;
+            // })
+            //fread( c, 1, 1, cb);
+        } else {
+            c.charCodeAt(0) = pevents++;
+        }
+
+        return (c.charCodeAt(0));
+    }
+*/
+    //var path = "data.adv";
+    //alert("dfdfddf");
+
+
+
+    //var data = iniget(1);
+    //alert(iniget(1));
+    ///alert(iniget(1));
+   // alert(pevents);
+    
+    //alert(iniget(1));
+</script>
+
+
+</body>
+</html>
